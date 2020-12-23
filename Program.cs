@@ -22,7 +22,7 @@ namespace Reverse
         static string ReverseName()
         {
             var name = GetName();
-            var array = new char[name.Length]; //Get the needed length for array based on string length.
+            var array = new char[name.Length]; //Get the needed size for array based on string length.
             var i = 0;
             foreach(char c in name) //Store each character in array.
             {
