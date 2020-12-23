@@ -22,20 +22,20 @@ namespace Reverse
         static string ReverseName()
         {
             var name = GetName();
-            var array = new char[name.Length];
+            var array = new char[name.Length]; //Get the needed length for array based on string length.
             var i = 0;
-            foreach(char c in name)
+            foreach(char c in name) //Store each character in array.
             {
                 array[i] = c;
                 i++;
             }
-            Array.Reverse(array);
-            return(string.Join("",array));
+            Array.Reverse(array); //Reverse array.
+            return(string.Join("",array)); //Return string of the reversed array.
         }
 
         static void PrintName()
         {
-            Console.WriteLine("Your name backwards is {0}.", ReverseName());
+            Console.WriteLine("Your name backwards is {0}.", ReverseName()); //Display the reversed string.
         }
         static void Main(string[] args)
         {
